@@ -80,6 +80,7 @@
                 <Attribute Id="Imie Wlasciciela" />
                 <Attribute Id="Miasto Wlasciciela" />
                 <Attribute Id="Plec Wlasciciela" />
+                <Attribute Id="Wiek Właściciela" />
               </Attributes>
               <Position x="20" y="20" />
             </Shape>
@@ -94,19 +95,19 @@
               <Attributes>
                 <Attribute Id="Rok Założenia Rachunku" />
               </Attributes>
-              <Position x="291" y="68" />
+              <Position x="291" y="92" />
             </Shape>
             <Shape Id="Id Miasta Wlasciciela T" Expanded="false">
               <Attributes>
                 <Attribute Id="Id Miasta Wlasciciela T" />
               </Attributes>
-              <Position x="291" y="116" />
+              <Position x="291" y="140" />
             </Shape>
             <Shape Id="Wojewodztwo Wlasciciela" Expanded="false">
               <Attributes>
                 <Attribute Id="Wojewodztwo Wlasciciela" />
               </Attributes>
-              <Position x="562" y="116" />
+              <Position x="562" y="140" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -186,6 +187,10 @@
         <AttributeRelationship dwd:design-time-name="518066d4-c2ec-4961-8f12-a83fa72e49b2">
           <AttributeID>Personalia Właściciela</AttributeID>
           <Name>Personalia Właściciela</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="11f6c06a-1f5d-4ebd-93ac-76286a0f9393">
+          <AttributeID>Wiek Właściciela</AttributeID>
+          <Name>Wiek Właściciela</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -418,6 +423,25 @@
       </AttributeRelationships>
       <OrderBy>AttributeName</OrderBy>
       <OrderByAttributeID>Nazwisko Wlasciciela</OrderByAttributeID>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5857d529-a74e-406f-a792-5eba3245b1e5">
+      <ID>Wiek Właściciela</ID>
+      <Name>Wiek Właściciela</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1ed5d0b3-c92b-4059-b501-56728b524fe2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="151668f4-766e-4ade-a7a8-20494547b97a">
+            <TableID>dbo_Rachunek</TableID>
+            <ColumnID>Wiek_x0020_właściciela</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <DiscretizationMethod>Clusters</DiscretizationMethod>
+      <DiscretizationBucketCount>7</DiscretizationBucketCount>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Dane właściela</AttributeHierarchyDisplayFolder>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>

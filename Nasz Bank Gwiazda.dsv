@@ -333,13 +333,14 @@
                     </xs:simpleType>
                   </xs:element>
                   <xs:element name="Rok_x0020_założenia_x0020_rachunku_x002C_" msdata:ReadOnly="true" msprop:design-time-name="d572dfc4-c38c-4203-9eb9-21263f810086" msprop:IsLogical="True" msprop:Description="Rok założenia rachunku," msprop:DbColumnName="Rok założenia rachunku," msprop:ComputedColumnExpression="Year(DataZalozenia)" type="xs:int" minOccurs="0" />
-                  <xs:element name="Personalia_x0020_właściciela" msdata:ReadOnly="true" msprop:Description="Imię właściciela razem z jego nazwiskiem" msprop:ComputedColumnExpression="ImieWlasciciela + ' ' + NazwiskoWlasciciela" msprop:IsLogical="True" msprop:design-time-name="d8622dfe-cc5f-495a-91fe-d7430c622d19" msprop:DbColumnName="Personalia właściciela">
+                  <xs:element name="Personalia_x0020_właściciela" msdata:ReadOnly="true" msprop:design-time-name="d8622dfe-cc5f-495a-91fe-d7430c622d19" msprop:IsLogical="True" msprop:Description="Imię właściciela razem z jego nazwiskiem" msprop:DbColumnName="Personalia właściciela" msprop:ComputedColumnExpression="ImieWlasciciela + ' ' + NazwiskoWlasciciela">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="101" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
+                  <xs:element name="Wiek_x0020_właściciela" msdata:ReadOnly="true" msprop:Description="Wiek właściciela rachunku" msprop:ComputedColumnExpression="2010 - year(DataUrodzeniaWlasciciela)" msprop:IsLogical="True" msprop:design-time-name="8938c6fa-441a-41ab-9cf1-8b1a4ab0402b" msprop:DbColumnName="Wiek właściciela" type="xs:int" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>

@@ -227,6 +227,20 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
+                  <xs:element name="Miesiąc_x0020_w_x0020_roku" msdata:ReadOnly="true" msprop:Description="Miesiąc w roku" msprop:ComputedColumnExpression="NazwaMiesiacaPolska + ' ' + CONVERT(CHAR (4), Rok)" msprop:IsLogical="True" msprop:design-time-name="162cc788-3a0c-478a-aa89-23abe4be9819" msprop:DbColumnName="Miesiąc w roku" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="55" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Kwartał_x0020_w_x0020_roku" msdata:ReadOnly="true" msprop:Description="Kwartał w roku" msprop:ComputedColumnExpression="'Kwartał ' + CONVERT(CHAR (1), Kwartal) + ' roku ' + CONVERT(CHAR (4), Rok)" msprop:IsLogical="True" msprop:design-time-name="5e5f71bc-fb48-4017-8172-63a75fe892ef" msprop:DbColumnName="Kwartał w roku" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="19" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
@@ -340,7 +354,7 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="Wiek_x0020_właściciela" msdata:ReadOnly="true" msprop:Description="Wiek właściciela rachunku" msprop:ComputedColumnExpression="2010 - year(DataUrodzeniaWlasciciela)" msprop:IsLogical="True" msprop:design-time-name="8938c6fa-441a-41ab-9cf1-8b1a4ab0402b" msprop:DbColumnName="Wiek właściciela" type="xs:int" minOccurs="0" />
+                  <xs:element name="Wiek_x0020_właściciela" msdata:ReadOnly="true" msprop:design-time-name="8938c6fa-441a-41ab-9cf1-8b1a4ab0402b" msprop:IsLogical="True" msprop:Description="Wiek właściciela rachunku" msprop:DbColumnName="Wiek właściciela" msprop:ComputedColumnExpression="2010 - year(DataUrodzeniaWlasciciela)" type="xs:int" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>

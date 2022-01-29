@@ -237,21 +237,19 @@
         <Attribute dwd:design-time-name="9521d0ef-56fd-412b-accd-927b3986c658">
           <AttributeID>Nazwa Miesiaca Polska</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="71d292a5-cf38-4610-b517-72e6a2b1aca4">
-          <AttributeID>Nazwa Miesiaca Angielska</AttributeID>
-          <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
-        </Attribute>
         <Attribute dwd:design-time-name="ec8fb18a-182b-48d2-a0ba-5d5fae9bdae8">
           <AttributeID>Nazwa Dnia Tygodnia Polska</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="4a2a322f-8fbc-452c-ae00-273583cdf9a3">
-          <AttributeID>Nazwa Dnia Tygodnia Angielska</AttributeID>
-          <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
         </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="682f9f48-262a-4121-97c8-7d0c3662a5b6">
           <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="a75a70a3-0609-4ff4-8250-1b55a40a8a83">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="c3bafdd5-2b15-4fd9-8beb-ff5b3137b76d">
+          <HierarchyID>Hierarchy 1 1</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>

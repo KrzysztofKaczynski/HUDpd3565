@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="14947f72-867d-4043-8257-aab03caf0db0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="675c873d-612a-48ca-86de-54494c14f76e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Oddział Banku</ID>
   <Name>Oddział Banku</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,9 +8,9 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6172" scrolltop="-13785" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="17092" y="26326" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6172" scrolltop="-13785" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="13018" y="11748" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
-              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+              <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
             </font>
             <mouseicon>
               <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -65,101 +65,155 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
       <Value>100</Value>
     </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="148">
+            <Shape Id="Id Oddzialu Banku" Expanded="false">
+              <Attributes>
+                <Attribute Id="Id Oddzialu Banku" />
+                <Attribute Id="Miasto" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Dzielnica" Expanded="false">
+              <Attributes>
+                <Attribute Id="Dzielnica" />
+              </Attributes>
+              <Position x="210" y="20" />
+            </Shape>
+            <Shape Id="Id Miasta T" Expanded="false">
+              <Attributes>
+                <Attribute Id="Id Miasta T" />
+              </Attributes>
+              <Position x="400" y="20" />
+            </Shape>
+            <Shape Id="Wojewodztwo" Expanded="false">
+              <Attributes>
+                <Attribute Id="Wojewodztwo" />
+              </Attributes>
+              <Position x="590" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="da6862f3-d6f0-47f5-915d-b880a2e42e2f">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="5c8838f2-5875-4393-870b-f17f7fe830ac">
     <DataSourceViewID>Nasz Bank Gwiazda</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="6cd3b76f-2b88-4480-b70f-633604d0d40a">
+  <ErrorConfiguration dwd:design-time-name="76affc63-8194-4f92-be58-91016c1c9d13">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="ab2d61ba-25e0-478e-86ae-0a0365b47615">
+    <Attribute dwd:design-time-name="45916fc9-c081-4ba2-94ec-a2fab1508979">
       <ID>Id Oddzialu Banku</ID>
       <Name>Nazwa Oddziału</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d5d99a93-70fe-4272-a312-cf52915a5ea7">
+        <KeyColumn dwd:design-time-name="ffdc52e0-d146-4c3b-9ee7-0bd86e832cc0">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3d0114cb-5341-4efb-9458-c9e21402925a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e9e3c45a-bf83-48d7-bbc4-a01b37b7277a">
             <TableID>dbo_OddzialBanku</TableID>
             <ColumnID>IdOddzialuBanku</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="de7e3fc1-fe5a-4722-b7e4-41a2f468883d">
+      <NameColumn dwd:design-time-name="86859793-4cec-41ae-82af-ab1666fda118">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="ca571135-4e5c-422f-a177-14f7f53adbcd">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a344191c-f4db-4964-875d-07017f7cd515">
           <TableID>dbo_OddzialBanku</TableID>
           <ColumnID>NazwaOddzialu</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="2dce7638-e8a5-4aeb-8108-b4c6cc8e3989">
-          <AttributeID>Id Miasta T</AttributeID>
-          <Name>Identyfikator Miasta</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="075b5981-d44c-470a-9f64-4d86e8a83689">
+        <AttributeRelationship dwd:design-time-name="73af29cf-627a-4809-b7e0-ad9f7ff361be">
           <AttributeID>Dzielnica</AttributeID>
           <Name>Dzielnica</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="dc7e70f1-92ce-4d7d-8ebc-211aa1f10477">
+        <AttributeRelationship dwd:design-time-name="35d55cd2-303e-43f7-ab56-da61d83c779c">
           <AttributeID>Miasto</AttributeID>
           <Name>Miasto</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="2b7ff524-37b2-408d-ad30-a39e9680430a">
-          <AttributeID>Wojewodztwo</AttributeID>
-          <Name>Województwo</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3b5c7781-8186-45fb-8fc1-43be6ab9d745">
+    <Attribute dwd:design-time-name="99d1954f-53a6-40be-8433-f003a8b33af4">
       <ID>Id Miasta T</ID>
       <Name>Identyfikator Miasta</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4d63b5d6-d47c-41e4-a967-e49d2a47688c">
+        <KeyColumn dwd:design-time-name="94002bc5-dbdd-47ca-b66f-80c7dee4c105">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="affc81fd-5cf8-4091-a325-907ed56900bc">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2900a2bc-c1c2-4007-b016-08477edccc1e">
             <TableID>dbo_OddzialBanku</TableID>
             <ColumnID>IdMiastaT</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="48f0c275-49c0-4398-a614-ded6f01e1e61">
+          <AttributeID>Wojewodztwo</AttributeID>
+          <Name>Województwo</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="18468c6e-4a0f-4637-b3c5-0dea37a12087">
+    <Attribute dwd:design-time-name="5a25f176-4a5d-4107-935d-198942c74e26">
       <ID>Dzielnica</ID>
       <Name>Dzielnica</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c7e3ff95-8c08-4393-b73a-1a362ad3719d">
+        <KeyColumn dwd:design-time-name="18c565a2-d7d2-4a2d-ba99-2e3b49610f6d">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c4f7ccf7-7b97-4294-a779-4ac6c3f2afce">
+            <TableID>dbo_OddzialBanku</TableID>
+            <ColumnID>Miasto</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="fae3003c-0906-4409-9b9c-701056df9375">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b9fd0fde-24b9-4953-bd77-38f86c25f8c1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="988165b5-1999-4495-b3d3-930ed26a2e79">
             <TableID>dbo_OddzialBanku</TableID>
             <ColumnID>Dzielnica</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="3a3cd921-9f94-4b89-a768-dfee1018528a">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6f86e88c-ce8f-4e50-98b0-6d87ba7090f5">
+          <TableID>dbo_OddzialBanku</TableID>
+          <ColumnID>Dzielnica</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9f391c53-d9ff-474a-b193-dbc384ae4435">
+          <AttributeID>Id Miasta T</AttributeID>
+          <Name>Identyfikator Miasta</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="a2c2483b-6b68-4d21-a2bb-5f7f4ed1e0bb">
+    <Attribute dwd:design-time-name="7740520a-19b2-4eee-9393-d1942e40184f">
       <ID>Miasto</ID>
       <Name>Miasto</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f7465cf4-b792-480e-b102-ad84c7c55c4b">
+        <KeyColumn dwd:design-time-name="850b2590-da38-47f7-a30a-d3d91f2f7eb4">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="eaa217c1-89a1-483b-a641-5a82a0baebce">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f008fd0-2035-415b-8800-e6e7da37a944">
             <TableID>dbo_OddzialBanku</TableID>
             <ColumnID>Miasto</ColumnID>
           </Source>
@@ -168,14 +222,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="786c15c5-c2f9-43d8-a2fe-a95916ee59c4">
+    <Attribute dwd:design-time-name="ccc80157-13a1-4fdc-9aeb-58b8f8b7ea37">
       <ID>Wojewodztwo</ID>
       <Name>Województwo</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a0ae962b-f0b9-4e4c-b112-466dfe5101a5">
+        <KeyColumn dwd:design-time-name="da9af40b-be27-40f9-b804-ce4bcb3e8840">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="34c8837a-d86a-4ebd-9367-0900fb47c33a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="adb2aabe-acdb-4d9a-91c2-e05e612d9f44">
             <TableID>dbo_OddzialBanku</TableID>
             <ColumnID>Wojewodztwo</ColumnID>
           </Source>
@@ -186,26 +240,26 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="52d65313-2195-40c4-90a1-cdc7606e6836">
+    <Hierarchy dwd:design-time-name="fd40c03f-3478-456a-bafe-60b64f727f5b">
       <ID>Hierarchy</ID>
       <Name>Hierarchia Geograficzna</Name>
       <Levels>
-        <Level dwd:design-time-name="b11c1293-094c-49fa-907f-68523c10625b">
+        <Level dwd:design-time-name="205b349d-5336-434a-bc9b-514b96c11184">
           <ID>Województwo</ID>
           <Name>Województwo</Name>
           <SourceAttributeID>Wojewodztwo</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="0e623ed8-ab44-4065-bc8e-fe4f601f2b05">
+        <Level dwd:design-time-name="303d9d6e-d948-41c0-b6e7-62c906a7ebed">
           <ID>Identyfikator Miasta</ID>
           <Name>Identyfikator Miasta</Name>
           <SourceAttributeID>Id Miasta T</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="c7dcde16-df3d-4fb6-92fd-7f4b10041225">
+        <Level dwd:design-time-name="2e9c91a0-16b0-4866-b843-66d929e8b8ac">
           <ID>Dzielnica</ID>
           <Name>Dzielnica</Name>
           <SourceAttributeID>Dzielnica</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="a30acefa-ef9e-492a-acb5-6f1ea761b72b">
+        <Level dwd:design-time-name="34441b2e-1586-4f60-b3af-037d61700a3f">
           <ID>Nazwa Oddziału</ID>
           <Name>Nazwa Oddziału</Name>
           <SourceAttributeID>Id Oddzialu Banku</SourceAttributeID>

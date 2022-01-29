@@ -1,0 +1,2616 @@
+<Create xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+    <ObjectDefinition>
+        <Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500">
+            <ID>pd3565</ID>
+            <Name>pd3565</Name>
+            <ddl200:CompatibilityLevel>1100</ddl200:CompatibilityLevel>
+            <Language>1045</Language>
+            <Collation>Polish_CI_AS</Collation>
+            <DataSourceImpersonationInfo>
+                <ImpersonationMode>Default</ImpersonationMode>
+            </DataSourceImpersonationInfo>
+            <Dimensions>
+                <Dimension>
+                    <ID>Rodzaj Operacji</ID>
+                    <Name>Rodzaj Operacji</Name>
+                    <Annotations>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+                            <Value>
+                                <dds xmlns="">
+                                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6674" scrolltop="-11377" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="17092" y="31565" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                                        <font>
+                                            <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+                                        </font>
+                                        <mouseicon>
+                                            <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                                        </mouseicon>
+                                    </diagram>
+                                    <layoutmanager>
+                                        <ddsxmlobj />
+                                    </layoutmanager>
+                                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="RodzajOperacji" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3704" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                        <control>
+                                            <ddsxmlobjectstreaminitwrapper binary="000e0000780e0000f40d0000" />
+                                        </control>
+                                        <layoutobject>
+                                            <ddsxmlobj>
+                                                <property name="LogicalObject" value="dbo_RodzajOperacji" vartype="8" />
+                                            </ddsxmlobj>
+                                        </layoutobject>
+                                        <shape groupshapeid="0" groupnode="0" />
+                                    </ddscontrol>
+                                </dds>
+                            </Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+                            <Value>true</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+                            <Value>false</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+                            <Value>true</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+                            <Value>-6674</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+                            <Value>-11377</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+                            <Value>20</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+                            <Value>0</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+                            <Value>100</Value>
+                        </Annotation>
+                    </Annotations>
+                    <Source xsi:type="DataSourceViewBinding">
+                        <DataSourceViewID>Nasz Bank Gwiazda</DataSourceViewID>
+                    </Source>
+                    <ErrorConfiguration>
+                        <KeyNotFound>ReportAndStop</KeyNotFound>
+                        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+                        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+                    </ErrorConfiguration>
+                    <Language>1045</Language>
+                    <Collation>Polish_CI_AS</Collation>
+                    <UnknownMemberName>Unknown</UnknownMemberName>
+                    <Attributes>
+                        <Attribute>
+                            <ID>Id Rodzaju Operacji</ID>
+                            <Name>Id Rodzaju Operacji</Name>
+                            <Usage>Key</Usage>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_RodzajOperacji</TableID>
+                                        <ColumnID>IdRodzajuOperacji</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>150</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_RodzajOperacji</TableID>
+                                    <ColumnID>Rodzaj</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <AttributeRelationships>
+                                <AttributeRelationship>
+                                    <AttributeID>Rodzaj Angielski</AttributeID>
+                                    <Name>Rodzaj Angielski</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Typ</AttributeID>
+                                    <Name>Typ</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Typ Angielski</AttributeID>
+                                    <Name>Typ Angielski</Name>
+                                </AttributeRelationship>
+                            </AttributeRelationships>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Rodzaj Angielski</ID>
+                            <Name>Rodzaj Angielski</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>150</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_RodzajOperacji</TableID>
+                                        <ColumnID>RodzajAngielski</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>150</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_RodzajOperacji</TableID>
+                                    <ColumnID>RodzajAngielski</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                            <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Typ</ID>
+                            <Name>Typ</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>50</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_RodzajOperacji</TableID>
+                                        <ColumnID>Typ</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>50</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_RodzajOperacji</TableID>
+                                    <ColumnID>Typ</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Typ Angielski</ID>
+                            <Name>Typ Angielski</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>50</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_RodzajOperacji</TableID>
+                                        <ColumnID>TypAngielski</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>50</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_RodzajOperacji</TableID>
+                                    <ColumnID>TypAngielski</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                            <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+                        </Attribute>
+                    </Attributes>
+                    <Hierarchies>
+                        <Hierarchy>
+                            <ID>Hierarchy</ID>
+                            <Name>Hierarchia Typ Rodzaj</Name>
+                            <Levels>
+                                <Level>
+                                    <ID>Typ</ID>
+                                    <Name>Typ</Name>
+                                    <SourceAttributeID>Typ</SourceAttributeID>
+                                </Level>
+                                <Level>
+                                    <ID>Id Rodzaju Operacji</ID>
+                                    <Name>Id Rodzaju Operacji</Name>
+                                    <SourceAttributeID>Id Rodzaju Operacji</SourceAttributeID>
+                                </Level>
+                            </Levels>
+                        </Hierarchy>
+                    </Hierarchies>
+                    <ProactiveCaching>
+                        <SilenceInterval>-PT1S</SilenceInterval>
+                        <Latency>-PT1S</Latency>
+                        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+                        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+                        <Source xsi:type="ProactiveCachingInheritedBinding" />
+                    </ProactiveCaching>
+                </Dimension>
+                <Dimension>
+                    <ID>Rachunek</ID>
+                    <Name>Rachunek</Name>
+                    <Annotations>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+                            <Value>
+                                <dds xmlns="">
+                                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6264" scrolltop="-13282" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="15928" y="31565" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                                        <font>
+                                            <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+                                        </font>
+                                        <mouseicon>
+                                            <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                                        </mouseicon>
+                                    </diagram>
+                                    <layoutmanager>
+                                        <ddsxmlobj />
+                                    </layoutmanager>
+                                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Rachunek" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4524" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                        <control>
+                                            <ddsxmlobjectstreaminitwrapper binary="000e0000ac11000088130000" />
+                                        </control>
+                                        <layoutobject>
+                                            <ddsxmlobj>
+                                                <property name="LogicalObject" value="dbo_Rachunek" vartype="8" />
+                                            </ddsxmlobj>
+                                        </layoutobject>
+                                        <shape groupshapeid="0" groupnode="0" />
+                                    </ddscontrol>
+                                </dds>
+                            </Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+                            <Value>true</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+                            <Value>false</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+                            <Value>true</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+                            <Value>-6264</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+                            <Value>-13282</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+                            <Value>20</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+                            <Value>0</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+                            <Value>100</Value>
+                        </Annotation>
+                    </Annotations>
+                    <Source xsi:type="DataSourceViewBinding">
+                        <DataSourceViewID>Nasz Bank Gwiazda</DataSourceViewID>
+                    </Source>
+                    <ErrorConfiguration>
+                        <KeyNotFound>ReportAndStop</KeyNotFound>
+                        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+                        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+                    </ErrorConfiguration>
+                    <Language>1045</Language>
+                    <Collation>Polish_CI_AS</Collation>
+                    <UnknownMemberName>Unknown</UnknownMemberName>
+                    <Attributes>
+                        <Attribute>
+                            <ID>Id Rachunku</ID>
+                            <Name>Numer rachunku</Name>
+                            <Usage>Key</Usage>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Rachunek</TableID>
+                                        <ColumnID>IdRachunku</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>26</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Rachunek</TableID>
+                                    <ColumnID>NumerRachunku</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <AttributeRelationships>
+                                <AttributeRelationship>
+                                    <AttributeID>Id Rachunku T</AttributeID>
+                                    <Name>Id Rachunku T</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Data Zalozenia</AttributeID>
+                                    <Name>Data Założenia Rachunku</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Id Wlasciciela T</AttributeID>
+                                    <Name>Id Wlasciciela T</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Imie Wlasciciela</AttributeID>
+                                    <Name>Imie Właściciela</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Nazwisko Wlasciciela</AttributeID>
+                                    <Name>Nazwisko Wlasciciela</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Data Urodzenia Wlasciciela</AttributeID>
+                                    <Name>Data Urodzenia Własciciela</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Plec Wlasciciela</AttributeID>
+                                    <Name>Płeć Właściciela</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Id Miasta Wlasciciela T</AttributeID>
+                                    <Name>Identyfikator miasta właściciela</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Dzielnica Wlasciciela</AttributeID>
+                                    <Name>Dzielnica Własciciela</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Miasto Wlasciciela</AttributeID>
+                                    <Name>Miasto Właściciela</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Wojewodztwo Wlasciciela</AttributeID>
+                                    <Name>Województwo Właściciela</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Grupa Aktywnosci</AttributeID>
+                                    <Name>Grupa Aktywności</Name>
+                                </AttributeRelationship>
+                            </AttributeRelationships>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Id Rachunku T</ID>
+                            <Name>Id Rachunku T</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Rachunek</TableID>
+                                        <ColumnID>IdRachunkuT</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Rachunek</TableID>
+                                    <ColumnID>IdRachunkuT</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Data Zalozenia</ID>
+                            <Name>Data Założenia Rachunku</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Date</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Rachunek</TableID>
+                                        <ColumnID>DataZalozenia</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Rachunek</TableID>
+                                    <ColumnID>DataZalozenia</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Id Wlasciciela T</ID>
+                            <Name>Id Wlasciciela T</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Rachunek</TableID>
+                                        <ColumnID>IdWlascicielaT</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Rachunek</TableID>
+                                    <ColumnID>IdWlascicielaT</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Imie Wlasciciela</ID>
+                            <Name>Imie Właściciela</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>50</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Rachunek</TableID>
+                                        <ColumnID>ImieWlasciciela</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>50</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Rachunek</TableID>
+                                    <ColumnID>ImieWlasciciela</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Nazwisko Wlasciciela</ID>
+                            <Name>Nazwisko Wlasciciela</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>50</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Rachunek</TableID>
+                                        <ColumnID>NazwiskoWlasciciela</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>50</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Rachunek</TableID>
+                                    <ColumnID>NazwiskoWlasciciela</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Data Urodzenia Wlasciciela</ID>
+                            <Name>Data Urodzenia Własciciela</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Date</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Rachunek</TableID>
+                                        <ColumnID>DataUrodzeniaWlasciciela</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Rachunek</TableID>
+                                    <ColumnID>DataUrodzeniaWlasciciela</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Plec Wlasciciela</ID>
+                            <Name>Płeć Właściciela</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>1</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Rachunek</TableID>
+                                        <ColumnID>PlecWlasciciela</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>1</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Rachunek</TableID>
+                                    <ColumnID>PlecWlasciciela</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Id Miasta Wlasciciela T</ID>
+                            <Name>Identyfikator miasta właściciela</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Rachunek</TableID>
+                                        <ColumnID>IdMiastaWlascicielaT</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>255</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Rachunek</TableID>
+                                    <ColumnID>MiastoWlasciciela</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Dzielnica Wlasciciela</ID>
+                            <Name>Dzielnica Własciciela</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>100</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Rachunek</TableID>
+                                        <ColumnID>DzielnicaWlasciciela</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>100</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Rachunek</TableID>
+                                    <ColumnID>DzielnicaWlasciciela</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Miasto Wlasciciela</ID>
+                            <Name>Miasto Właściciela</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>255</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Rachunek</TableID>
+                                        <ColumnID>MiastoWlasciciela</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>255</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Rachunek</TableID>
+                                    <ColumnID>MiastoWlasciciela</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Wojewodztwo Wlasciciela</ID>
+                            <Name>Województwo Właściciela</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>255</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Rachunek</TableID>
+                                        <ColumnID>WojewodztwoWlasciciela</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>255</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Rachunek</TableID>
+                                    <ColumnID>WojewodztwoWlasciciela</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Grupa Aktywnosci</ID>
+                            <Name>Grupa Aktywności</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>50</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Rachunek</TableID>
+                                        <ColumnID>GrupaAktywnosci</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>50</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Rachunek</TableID>
+                                    <ColumnID>GrupaAktywnosci</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                    </Attributes>
+                    <Hierarchies>
+                        <Hierarchy>
+                            <ID>Hierarchy</ID>
+                            <Name>Hierarchia Geograficzna</Name>
+                            <Levels>
+                                <Level>
+                                    <ID>Województwo Właściciela</ID>
+                                    <Name>Województwo Właściciela</Name>
+                                    <SourceAttributeID>Wojewodztwo Wlasciciela</SourceAttributeID>
+                                </Level>
+                                <Level>
+                                    <ID>Identyfikator miasta właściciela</ID>
+                                    <Name>Identyfikator miasta właściciela</Name>
+                                    <SourceAttributeID>Id Miasta Wlasciciela T</SourceAttributeID>
+                                </Level>
+                                <Level>
+                                    <ID>Numer rachunku</ID>
+                                    <Name>Numer rachunku</Name>
+                                    <SourceAttributeID>Id Rachunku</SourceAttributeID>
+                                </Level>
+                            </Levels>
+                        </Hierarchy>
+                    </Hierarchies>
+                    <ProactiveCaching>
+                        <SilenceInterval>-PT1S</SilenceInterval>
+                        <Latency>-PT1S</Latency>
+                        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+                        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+                        <Source xsi:type="ProactiveCachingInheritedBinding" />
+                    </ProactiveCaching>
+                </Dimension>
+                <Dimension>
+                    <ID>Czas</ID>
+                    <Name>Czas</Name>
+                    <Annotations>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+                            <Value>
+                                <dds xmlns="">
+                                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5417" scrolltop="-13282" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="15928" y="31565" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                                        <font>
+                                            <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+                                        </font>
+                                        <mouseicon>
+                                            <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                                        </mouseicon>
+                                    </diagram>
+                                    <layoutmanager>
+                                        <ddsxmlobj />
+                                    </layoutmanager>
+                                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Czas" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5054" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                        <control>
+                                            <ddsxmlobjectstreaminitwrapper binary="000e0000be13000088130000" />
+                                        </control>
+                                        <layoutobject>
+                                            <ddsxmlobj>
+                                                <property name="LogicalObject" value="dbo_Czas" vartype="8" />
+                                            </ddsxmlobj>
+                                        </layoutobject>
+                                        <shape groupshapeid="0" groupnode="0" />
+                                    </ddscontrol>
+                                </dds>
+                            </Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+                            <Value>true</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+                            <Value>false</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+                            <Value>true</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+                            <Value>-5417</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+                            <Value>-13282</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+                            <Value>20</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+                            <Value>0</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+                            <Value>100</Value>
+                        </Annotation>
+                    </Annotations>
+                    <Source xsi:type="DataSourceViewBinding">
+                        <DataSourceViewID>Nasz Bank Gwiazda</DataSourceViewID>
+                    </Source>
+                    <Type>Time</Type>
+                    <ErrorConfiguration>
+                        <KeyNotFound>ReportAndStop</KeyNotFound>
+                        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+                        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+                    </ErrorConfiguration>
+                    <Language>1045</Language>
+                    <Collation>Polish_CI_AS</Collation>
+                    <UnknownMemberName>Unknown</UnknownMemberName>
+                    <Attributes>
+                        <Attribute>
+                            <ID>Id Czasu</ID>
+                            <Name>Data</Name>
+                            <Type>Date</Type>
+                            <Usage>Key</Usage>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Czas</TableID>
+                                        <ColumnID>IdCzasu</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Czas</TableID>
+                                    <ColumnID>Data</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <AttributeRelationships>
+                                <AttributeRelationship>
+                                    <AttributeID>Dzien</AttributeID>
+                                    <Name>Dzień</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Miesiac</AttributeID>
+                                    <Name>Miesiąc</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Kwartal</AttributeID>
+                                    <Name>Kwartał</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Rok</AttributeID>
+                                    <Name>Rok</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Dzien Tygodnia</AttributeID>
+                                    <Name>Dzień Tygodnia</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Nazwa Miesiaca Polska</AttributeID>
+                                    <Name>Nazwa Miesiąca</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Nazwa Miesiaca Angielska</AttributeID>
+                                    <Name>Nazwa Miesiąca Angielska</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Nazwa Dnia Tygodnia Polska</AttributeID>
+                                    <Name>Nazwa Dnia Tygodnia</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Nazwa Dnia Tygodnia Angielska</AttributeID>
+                                    <Name>Nazwa Dnia Tygodnia Angielska</Name>
+                                </AttributeRelationship>
+                            </AttributeRelationships>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Dzien</ID>
+                            <Name>Dzień</Name>
+                            <Type>DayOfMonth</Type>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Double</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Czas</TableID>
+                                        <ColumnID>Dzien</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Czas</TableID>
+                                    <ColumnID>Dzien</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Miesiac</ID>
+                            <Name>Miesiąc</Name>
+                            <Type>MonthOfYear</Type>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Double</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Czas</TableID>
+                                        <ColumnID>Miesiac</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Czas</TableID>
+                                    <ColumnID>Miesiac</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Kwartal</ID>
+                            <Name>Kwartał</Name>
+                            <Type>Quarters</Type>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Double</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Czas</TableID>
+                                        <ColumnID>Kwartal</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Czas</TableID>
+                                    <ColumnID>Kwartal</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Rok</ID>
+                            <Name>Rok</Name>
+                            <Type>Years</Type>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Double</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Czas</TableID>
+                                        <ColumnID>Rok</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Czas</TableID>
+                                    <ColumnID>Rok</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Dzien Tygodnia</ID>
+                            <Name>Dzień Tygodnia</Name>
+                            <Type>DayOfWeek</Type>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Double</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Czas</TableID>
+                                        <ColumnID>DzienTygodnia</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Czas</TableID>
+                                    <ColumnID>DzienTygodnia</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Nazwa Miesiaca Polska</ID>
+                            <Name>Nazwa Miesiąca</Name>
+                            <Type>Months</Type>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>50</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Czas</TableID>
+                                        <ColumnID>NazwaMiesiacaPolska</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>50</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Czas</TableID>
+                                    <ColumnID>NazwaMiesiacaPolska</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Nazwa Miesiaca Angielska</ID>
+                            <Name>Nazwa Miesiąca Angielska</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>50</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Czas</TableID>
+                                        <ColumnID>NazwaMiesiacaAngielska</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>50</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Czas</TableID>
+                                    <ColumnID>NazwaMiesiacaAngielska</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                            <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Nazwa Dnia Tygodnia Polska</ID>
+                            <Name>Nazwa Dnia Tygodnia</Name>
+                            <Type>DayOfWeek</Type>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>50</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Czas</TableID>
+                                        <ColumnID>NazwaDniaTygodniaPolska</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>50</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Czas</TableID>
+                                    <ColumnID>NazwaDniaTygodniaPolska</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Nazwa Dnia Tygodnia Angielska</ID>
+                            <Name>Nazwa Dnia Tygodnia Angielska</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>50</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_Czas</TableID>
+                                        <ColumnID>NazwaDniaTygodniaAngielska</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>50</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_Czas</TableID>
+                                    <ColumnID>NazwaDniaTygodniaAngielska</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <OrderBy>Key</OrderBy>
+                            <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+                        </Attribute>
+                    </Attributes>
+                    <Hierarchies>
+                        <Hierarchy>
+                            <ID>Hierarchy</ID>
+                            <Name>Hierarchia Kalendarzowa</Name>
+                            <Levels>
+                                <Level>
+                                    <ID>Rok</ID>
+                                    <Name>Rok</Name>
+                                    <SourceAttributeID>Rok</SourceAttributeID>
+                                </Level>
+                                <Level>
+                                    <ID>Kwartał</ID>
+                                    <Name>Kwartał</Name>
+                                    <SourceAttributeID>Kwartal</SourceAttributeID>
+                                </Level>
+                                <Level>
+                                    <ID>Nazwa Miesiąca</ID>
+                                    <Name>Nazwa Miesiąca</Name>
+                                    <SourceAttributeID>Nazwa Miesiaca Polska</SourceAttributeID>
+                                </Level>
+                                <Level>
+                                    <ID>Data</ID>
+                                    <Name>Data</Name>
+                                    <SourceAttributeID>Id Czasu</SourceAttributeID>
+                                </Level>
+                            </Levels>
+                        </Hierarchy>
+                    </Hierarchies>
+                    <ProactiveCaching>
+                        <SilenceInterval>-PT1S</SilenceInterval>
+                        <Latency>-PT1S</Latency>
+                        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+                        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+                        <Source xsi:type="ProactiveCachingInheritedBinding" />
+                    </ProactiveCaching>
+                </Dimension>
+                <Dimension>
+                    <ID>Oddział Banku</ID>
+                    <Name>Oddział Banku</Name>
+                    <Annotations>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+                            <Value>
+                                <dds xmlns="">
+                                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6172" scrolltop="-13785" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="17092" y="26326" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                                        <font>
+                                            <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+                                        </font>
+                                        <mouseicon>
+                                            <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                                        </mouseicon>
+                                    </diagram>
+                                    <layoutmanager>
+                                        <ddsxmlobj />
+                                    </layoutmanager>
+                                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Oddział Banku" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3545" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                        <control>
+                                            <ddsxmlobjectstreaminitwrapper binary="000e0000d90d00009b0f0000" />
+                                        </control>
+                                        <layoutobject>
+                                            <ddsxmlobj>
+                                                <property name="LogicalObject" value="dbo_OddzialBanku" vartype="8" />
+                                            </ddsxmlobj>
+                                        </layoutobject>
+                                        <shape groupshapeid="0" groupnode="0" />
+                                    </ddscontrol>
+                                </dds>
+                            </Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+                            <Value>true</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+                            <Value>false</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+                            <Value>true</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+                            <Value>-6172</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+                            <Value>-13785</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+                            <Value>20</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+                            <Value>0</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+                            <Value>100</Value>
+                        </Annotation>
+                    </Annotations>
+                    <Source xsi:type="DataSourceViewBinding">
+                        <DataSourceViewID>Nasz Bank Gwiazda</DataSourceViewID>
+                    </Source>
+                    <ErrorConfiguration>
+                        <KeyNotFound>ReportAndStop</KeyNotFound>
+                        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+                        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+                    </ErrorConfiguration>
+                    <Language>1045</Language>
+                    <Collation>Polish_CI_AS</Collation>
+                    <UnknownMemberName>Unknown</UnknownMemberName>
+                    <Attributes>
+                        <Attribute>
+                            <ID>Id Oddzialu Banku</ID>
+                            <Name>Nazwa Oddziału</Name>
+                            <Usage>Key</Usage>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_OddzialBanku</TableID>
+                                        <ColumnID>IdOddzialuBanku</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>255</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_OddzialBanku</TableID>
+                                    <ColumnID>NazwaOddzialu</ColumnID>
+                                </Source>
+                            </NameColumn>
+                            <AttributeRelationships>
+                                <AttributeRelationship>
+                                    <AttributeID>Id Miasta T</AttributeID>
+                                    <Name>Identyfikator Miasta</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Dzielnica</AttributeID>
+                                    <Name>Dzielnica</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Miasto</AttributeID>
+                                    <Name>Miasto</Name>
+                                </AttributeRelationship>
+                                <AttributeRelationship>
+                                    <AttributeID>Wojewodztwo</AttributeID>
+                                    <Name>Województwo</Name>
+                                </AttributeRelationship>
+                            </AttributeRelationships>
+                            <OrderBy>Key</OrderBy>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Id Miasta T</ID>
+                            <Name>Identyfikator Miasta</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_OddzialBanku</TableID>
+                                        <ColumnID>IdMiastaT</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_OddzialBanku</TableID>
+                                    <ColumnID>IdMiastaT</ColumnID>
+                                </Source>
+                            </NameColumn>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Dzielnica</ID>
+                            <Name>Dzielnica</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>100</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_OddzialBanku</TableID>
+                                        <ColumnID>Dzielnica</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>100</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_OddzialBanku</TableID>
+                                    <ColumnID>Dzielnica</ColumnID>
+                                </Source>
+                            </NameColumn>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Miasto</ID>
+                            <Name>Miasto</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>255</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_OddzialBanku</TableID>
+                                        <ColumnID>Miasto</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>255</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_OddzialBanku</TableID>
+                                    <ColumnID>Miasto</ColumnID>
+                                </Source>
+                            </NameColumn>
+                        </Attribute>
+                        <Attribute>
+                            <ID>Wojewodztwo</ID>
+                            <Name>Województwo</Name>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>255</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_OddzialBanku</TableID>
+                                        <ColumnID>Wojewodztwo</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <NameColumn>
+                                <DataType>WChar</DataType>
+                                <DataSize>255</DataSize>
+                                <Source xsi:type="ColumnBinding">
+                                    <TableID>dbo_OddzialBanku</TableID>
+                                    <ColumnID>Wojewodztwo</ColumnID>
+                                </Source>
+                            </NameColumn>
+                        </Attribute>
+                    </Attributes>
+                    <Hierarchies>
+                        <Hierarchy>
+                            <ID>Hierarchy</ID>
+                            <Name>Hierarchia Geograficzna</Name>
+                            <Levels>
+                                <Level>
+                                    <ID>Województwo</ID>
+                                    <Name>Województwo</Name>
+                                    <SourceAttributeID>Wojewodztwo</SourceAttributeID>
+                                </Level>
+                                <Level>
+                                    <ID>Identyfikator Miasta</ID>
+                                    <Name>Identyfikator Miasta</Name>
+                                    <SourceAttributeID>Id Miasta T</SourceAttributeID>
+                                </Level>
+                                <Level>
+                                    <ID>Dzielnica</ID>
+                                    <Name>Dzielnica</Name>
+                                    <SourceAttributeID>Dzielnica</SourceAttributeID>
+                                </Level>
+                                <Level>
+                                    <ID>Nazwa Oddziału</ID>
+                                    <Name>Nazwa Oddziału</Name>
+                                    <SourceAttributeID>Id Oddzialu Banku</SourceAttributeID>
+                                </Level>
+                            </Levels>
+                        </Hierarchy>
+                    </Hierarchies>
+                    <ProactiveCaching>
+                        <SilenceInterval>-PT1S</SilenceInterval>
+                        <Latency>-PT1S</Latency>
+                        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+                        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+                        <Source xsi:type="ProactiveCachingInheritedBinding" />
+                    </ProactiveCaching>
+                </Dimension>
+            </Dimensions>
+            <Cubes>
+                <Cube>
+                    <ID>Nasz Bank Gwiazda</ID>
+                    <Name>Nasz Bank Gwiazda</Name>
+                    <Annotations>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+                            <Value>
+                                <dds xmlns="">
+                                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="10" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-18112" scrolltop="-3977" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="51858" y="26326" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                                        <font>
+                                            <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+                                        </font>
+                                        <mouseicon>
+                                            <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                                        </mouseicon>
+                                    </diagram>
+                                    <layoutmanager>
+                                        <ddsxmlobj />
+                                    </layoutmanager>
+                                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Transakcje" left="6124" top="7400" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3545" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                        <control>
+                                            <ddsxmlobjectstreaminitwrapper binary="000e0000d90d0000f40d0000" />
+                                        </control>
+                                        <layoutobject>
+                                            <ddsxmlobj>
+                                                <property name="LogicalObject" value="dbo_Transakcje" vartype="8" />
+                                            </ddsxmlobj>
+                                        </layoutobject>
+                                        <shape groupshapeid="0" groupnode="0" />
+                                    </ddscontrol>
+                                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Oddział Banku" left="12069" top="7189" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3545" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                        <control>
+                                            <ddsxmlobjectstreaminitwrapper binary="000e0000d90d00009b0f0000" />
+                                        </control>
+                                        <layoutobject>
+                                            <ddsxmlobj>
+                                                <property name="LogicalObject" value="dbo_OddzialBanku" vartype="8" />
+                                            </ddsxmlobj>
+                                        </layoutobject>
+                                        <shape groupshapeid="0" groupnode="0" />
+                                    </ddscontrol>
+                                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Rachunek" left="5145" top="13372" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="4524" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                        <control>
+                                            <ddsxmlobjectstreaminitwrapper binary="000e0000ac11000088130000" />
+                                        </control>
+                                        <layoutobject>
+                                            <ddsxmlobj>
+                                                <property name="LogicalObject" value="dbo_Rachunek" vartype="8" />
+                                            </ddsxmlobj>
+                                        </layoutobject>
+                                        <shape groupshapeid="0" groupnode="0" />
+                                    </ddscontrol>
+                                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Rodzaj Operacji" left="20" top="7400" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3704" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                        <control>
+                                            <ddsxmlobjectstreaminitwrapper binary="000e0000780e0000f40d0000" />
+                                        </control>
+                                        <layoutobject>
+                                            <ddsxmlobj>
+                                                <property name="LogicalObject" value="dbo_RodzajOperacji" vartype="8" />
+                                            </ddsxmlobj>
+                                        </layoutobject>
+                                        <shape groupshapeid="0" groupnode="0" />
+                                    </ddscontrol>
+                                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Czas" left="4615" top="0" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="5054" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                        <control>
+                                            <ddsxmlobjectstreaminitwrapper binary="000e0000be13000088130000" />
+                                        </control>
+                                        <layoutobject>
+                                            <ddsxmlobj>
+                                                <property name="LogicalObject" value="dbo_Czas" vartype="8" />
+                                            </ddsxmlobj>
+                                        </layoutobject>
+                                        <shape groupshapeid="0" groupnode="0" />
+                                    </ddscontrol>
+                                    <ddscontrol controlprogid="MSDDS.Polyline" left="3424" top="8787" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                        <control>
+                                            <ddsxmlobj>
+                                                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                                            </ddsxmlobj>
+                                        </control>
+                                        <layoutobject>
+                                            <ddsxmlobj>
+                                                <property name="LogicalObject" value="dataSet.Relations[fk_operacja]" vartype="8" />
+                                                <property name="Virtual" value="0" vartype="11" />
+                                                <property name="VisibleAP" value="0" vartype="3" />
+                                            </ddsxmlobj>
+                                        </layoutobject>
+                                        <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="21" destattachpoint="20" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                                            <point x="3724" y="9186" />
+                                            <point x="6124" y="9186" />
+                                        </connector>
+                                    </ddscontrol>
+                                    <ddscontrol controlprogid="MSDDS.Polyline" left="6743" top="4501" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="1453" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                        <control>
+                                            <ddsxmlobj>
+                                                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                                            </ddsxmlobj>
+                                        </control>
+                                        <layoutobject>
+                                            <ddsxmlobj>
+                                                <property name="LogicalObject" value="dataSet.Relations[fk_czas]" vartype="8" />
+                                                <property name="Virtual" value="0" vartype="11" />
+                                                <property name="VisibleAP" value="0" vartype="3" />
+                                            </ddsxmlobj>
+                                        </layoutobject>
+                                        <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="1" sourceattachpoint="9" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                                            <point x="7142" y="5000" />
+                                            <point x="7142" y="6200" />
+                                            <point x="7896" y="6200" />
+                                            <point x="7896" y="7400" />
+                                        </connector>
+                                    </ddscontrol>
+                                    <ddscontrol controlprogid="MSDDS.Polyline" left="7008" top="10672" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="1188" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                        <control>
+                                            <ddsxmlobj>
+                                                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                                            </ddsxmlobj>
+                                        </control>
+                                        <layoutobject>
+                                            <ddsxmlobj>
+                                                <property name="LogicalObject" value="dataSet.Relations[fk_konto]" vartype="8" />
+                                                <property name="Virtual" value="0" vartype="11" />
+                                                <property name="VisibleAP" value="0" vartype="3" />
+                                            </ddsxmlobj>
+                                        </layoutobject>
+                                        <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="6" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                                            <point x="7407" y="13372" />
+                                            <point x="7407" y="12172" />
+                                            <point x="7896" y="12172" />
+                                            <point x="7896" y="10972" />
+                                        </connector>
+                                    </ddscontrol>
+                                    <ddscontrol controlprogid="MSDDS.Polyline" left="9369" top="8787" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                        <control>
+                                            <ddsxmlobj>
+                                                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                                            </ddsxmlobj>
+                                        </control>
+                                        <layoutobject>
+                                            <ddsxmlobj>
+                                                <property name="LogicalObject" value="dataSet.Relations[fk_oddzial]" vartype="8" />
+                                                <property name="Virtual" value="0" vartype="11" />
+                                                <property name="VisibleAP" value="0" vartype="3" />
+                                            </ddsxmlobj>
+                                        </layoutobject>
+                                        <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="20" destattachpoint="21" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                                            <point x="12069" y="9186" />
+                                            <point x="9669" y="9186" />
+                                        </connector>
+                                    </ddscontrol>
+                                </dds>
+                            </Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+                            <Value>true</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+                            <Value>false</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+                            <Value>true</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+                            <Value>-18112</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+                            <Value>-3977</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+                            <Value>20</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+                            <Value>0</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+                            <Value>100</Value>
+                        </Annotation>
+                    </Annotations>
+                    <Language>1045</Language>
+                    <Collation>Polish_CI_AS</Collation>
+                    <Dimensions>
+                        <Dimension>
+                            <ID>Rodzaj Operacji</ID>
+                            <Name>Rodzaj Operacji</Name>
+                            <DimensionID>Rodzaj Operacji</DimensionID>
+                            <Attributes>
+                                <Attribute>
+                                    <AttributeID>Id Rodzaju Operacji</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Rodzaj Angielski</AttributeID>
+                                    <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Typ</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Typ Angielski</AttributeID>
+                                    <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+                                </Attribute>
+                            </Attributes>
+                            <Hierarchies>
+                                <Hierarchy>
+                                    <HierarchyID>Hierarchy</HierarchyID>
+                                </Hierarchy>
+                            </Hierarchies>
+                        </Dimension>
+                        <Dimension>
+                            <ID>Czas</ID>
+                            <Name>Czas</Name>
+                            <DimensionID>Czas</DimensionID>
+                            <Attributes>
+                                <Attribute>
+                                    <AttributeID>Id Czasu</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Dzien</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Miesiac</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Kwartal</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Rok</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Dzien Tygodnia</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Nazwa Miesiaca Polska</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Nazwa Miesiaca Angielska</AttributeID>
+                                    <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Nazwa Dnia Tygodnia Polska</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Nazwa Dnia Tygodnia Angielska</AttributeID>
+                                    <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+                                </Attribute>
+                            </Attributes>
+                            <Hierarchies>
+                                <Hierarchy>
+                                    <HierarchyID>Hierarchy</HierarchyID>
+                                </Hierarchy>
+                            </Hierarchies>
+                        </Dimension>
+                        <Dimension>
+                            <ID>Rachunek</ID>
+                            <Name>Rachunek</Name>
+                            <DimensionID>Rachunek</DimensionID>
+                            <Attributes>
+                                <Attribute>
+                                    <AttributeID>Id Rachunku</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Id Rachunku T</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Data Zalozenia</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Id Wlasciciela T</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Imie Wlasciciela</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Nazwisko Wlasciciela</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Data Urodzenia Wlasciciela</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Plec Wlasciciela</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Id Miasta Wlasciciela T</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Dzielnica Wlasciciela</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Miasto Wlasciciela</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Wojewodztwo Wlasciciela</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Grupa Aktywnosci</AttributeID>
+                                </Attribute>
+                            </Attributes>
+                            <Hierarchies>
+                                <Hierarchy>
+                                    <HierarchyID>Hierarchy</HierarchyID>
+                                </Hierarchy>
+                            </Hierarchies>
+                        </Dimension>
+                        <Dimension>
+                            <ID>Oddział Banku</ID>
+                            <Name>Oddział Banku</Name>
+                            <DimensionID>Oddział Banku</DimensionID>
+                            <Attributes>
+                                <Attribute>
+                                    <AttributeID>Id Oddzialu Banku</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Id Miasta T</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Dzielnica</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Miasto</AttributeID>
+                                </Attribute>
+                                <Attribute>
+                                    <AttributeID>Wojewodztwo</AttributeID>
+                                </Attribute>
+                            </Attributes>
+                            <Hierarchies>
+                                <Hierarchy>
+                                    <HierarchyID>Hierarchy</HierarchyID>
+                                </Hierarchy>
+                            </Hierarchies>
+                        </Dimension>
+                    </Dimensions>
+                    <MeasureGroups>
+                        <MeasureGroup>
+                            <ID>Transakcje</ID>
+                            <Name>Transakcje</Name>
+                            <Measures>
+                                <Measure>
+                                    <ID>Sumaryczna Kwota</ID>
+                                    <Name>Sumaryczna Kwota</Name>
+                                    <DataType>Double</DataType>
+                                    <Source>
+                                        <DataType>Double</DataType>
+                                        <Source xsi:type="ColumnBinding">
+                                            <TableID>dbo_Transakcje</TableID>
+                                            <ColumnID>SumarycznaKwota</ColumnID>
+                                        </Source>
+                                    </Source>
+                                </Measure>
+                                <Measure>
+                                    <ID>Liczba Operacji</ID>
+                                    <Name>Liczba Operacji</Name>
+                                    <DataType>Double</DataType>
+                                    <Source>
+                                        <DataType>Double</DataType>
+                                        <Source xsi:type="ColumnBinding">
+                                            <TableID>dbo_Transakcje</TableID>
+                                            <ColumnID>LiczbaOperacji</ColumnID>
+                                        </Source>
+                                    </Source>
+                                </Measure>
+                                <Measure>
+                                    <ID>Transakcje Count</ID>
+                                    <Name>Transakcje Count</Name>
+                                    <AggregateFunction>Count</AggregateFunction>
+                                    <DataType>Integer</DataType>
+                                    <Source>
+                                        <DataType>Integer</DataType>
+                                        <DataSize>4</DataSize>
+                                        <Source xsi:type="RowBinding">
+                                            <TableID>dbo_Transakcje</TableID>
+                                        </Source>
+                                    </Source>
+                                </Measure>
+                            </Measures>
+                            <StorageMode>Molap</StorageMode>
+                            <ProcessingMode>Regular</ProcessingMode>
+                            <Dimensions>
+                                <Dimension xsi:type="RegularMeasureGroupDimension">
+                                    <CubeDimensionID>Rodzaj Operacji</CubeDimensionID>
+                                    <Attributes>
+                                        <Attribute>
+                                            <AttributeID>Id Rodzaju Operacji</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>Integer</DataType>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Transakcje</TableID>
+                                                        <ColumnID>IdRodzajuOperacji</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                            <Type>Granularity</Type>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Rodzaj Angielski</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>150</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_RodzajOperacji</TableID>
+                                                        <ColumnID>RodzajAngielski</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Typ</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>50</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_RodzajOperacji</TableID>
+                                                        <ColumnID>Typ</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Typ Angielski</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>50</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_RodzajOperacji</TableID>
+                                                        <ColumnID>TypAngielski</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                    </Attributes>
+                                </Dimension>
+                                <Dimension xsi:type="RegularMeasureGroupDimension">
+                                    <CubeDimensionID>Czas</CubeDimensionID>
+                                    <Attributes>
+                                        <Attribute>
+                                            <AttributeID>Id Czasu</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>Integer</DataType>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Transakcje</TableID>
+                                                        <ColumnID>IdCzasu</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                            <Type>Granularity</Type>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Dzien</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>Double</DataType>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Czas</TableID>
+                                                        <ColumnID>Dzien</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Miesiac</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>Double</DataType>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Czas</TableID>
+                                                        <ColumnID>Miesiac</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Kwartal</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>Double</DataType>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Czas</TableID>
+                                                        <ColumnID>Kwartal</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Rok</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>Double</DataType>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Czas</TableID>
+                                                        <ColumnID>Rok</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Dzien Tygodnia</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>Double</DataType>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Czas</TableID>
+                                                        <ColumnID>DzienTygodnia</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Nazwa Miesiaca Polska</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>50</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Czas</TableID>
+                                                        <ColumnID>NazwaMiesiacaPolska</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Nazwa Miesiaca Angielska</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>50</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Czas</TableID>
+                                                        <ColumnID>NazwaMiesiacaAngielska</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Nazwa Dnia Tygodnia Polska</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>50</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Czas</TableID>
+                                                        <ColumnID>NazwaDniaTygodniaPolska</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Nazwa Dnia Tygodnia Angielska</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>50</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Czas</TableID>
+                                                        <ColumnID>NazwaDniaTygodniaAngielska</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                    </Attributes>
+                                </Dimension>
+                                <Dimension xsi:type="RegularMeasureGroupDimension">
+                                    <CubeDimensionID>Rachunek</CubeDimensionID>
+                                    <Attributes>
+                                        <Attribute>
+                                            <AttributeID>Id Rachunku</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>Integer</DataType>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Transakcje</TableID>
+                                                        <ColumnID>IdRachunku</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                            <Type>Granularity</Type>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Id Rachunku T</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>Integer</DataType>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Rachunek</TableID>
+                                                        <ColumnID>IdRachunkuT</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Data Zalozenia</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>Date</DataType>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Rachunek</TableID>
+                                                        <ColumnID>DataZalozenia</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Id Wlasciciela T</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>Integer</DataType>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Rachunek</TableID>
+                                                        <ColumnID>IdWlascicielaT</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Imie Wlasciciela</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>50</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Rachunek</TableID>
+                                                        <ColumnID>ImieWlasciciela</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Nazwisko Wlasciciela</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>50</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Rachunek</TableID>
+                                                        <ColumnID>NazwiskoWlasciciela</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Data Urodzenia Wlasciciela</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>Date</DataType>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Rachunek</TableID>
+                                                        <ColumnID>DataUrodzeniaWlasciciela</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Plec Wlasciciela</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>1</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Rachunek</TableID>
+                                                        <ColumnID>PlecWlasciciela</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Id Miasta Wlasciciela T</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>Integer</DataType>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Rachunek</TableID>
+                                                        <ColumnID>IdMiastaWlascicielaT</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Dzielnica Wlasciciela</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>100</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Rachunek</TableID>
+                                                        <ColumnID>DzielnicaWlasciciela</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Miasto Wlasciciela</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>255</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Rachunek</TableID>
+                                                        <ColumnID>MiastoWlasciciela</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Wojewodztwo Wlasciciela</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>255</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Rachunek</TableID>
+                                                        <ColumnID>WojewodztwoWlasciciela</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Grupa Aktywnosci</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>50</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Rachunek</TableID>
+                                                        <ColumnID>GrupaAktywnosci</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                    </Attributes>
+                                </Dimension>
+                                <Dimension xsi:type="RegularMeasureGroupDimension">
+                                    <CubeDimensionID>Oddział Banku</CubeDimensionID>
+                                    <Attributes>
+                                        <Attribute>
+                                            <AttributeID>Id Oddzialu Banku</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>Integer</DataType>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_Transakcje</TableID>
+                                                        <ColumnID>IdOddzialuBanku</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                            <Type>Granularity</Type>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Id Miasta T</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>Integer</DataType>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_OddzialBanku</TableID>
+                                                        <ColumnID>IdMiastaT</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Dzielnica</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>100</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_OddzialBanku</TableID>
+                                                        <ColumnID>Dzielnica</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Miasto</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>255</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_OddzialBanku</TableID>
+                                                        <ColumnID>Miasto</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                        <Attribute>
+                                            <AttributeID>Wojewodztwo</AttributeID>
+                                            <KeyColumns>
+                                                <KeyColumn>
+                                                    <DataType>WChar</DataType>
+                                                    <DataSize>255</DataSize>
+                                                    <Source xsi:type="ColumnBinding">
+                                                        <TableID>dbo_OddzialBanku</TableID>
+                                                        <ColumnID>Wojewodztwo</ColumnID>
+                                                    </Source>
+                                                </KeyColumn>
+                                            </KeyColumns>
+                                        </Attribute>
+                                    </Attributes>
+                                </Dimension>
+                            </Dimensions>
+                            <Partitions>
+                                <Partition>
+                                    <ID>Transakcje</ID>
+                                    <Name>Transakcje</Name>
+                                    <Source xsi:type="DsvTableBinding">
+                                        <DataSourceViewID>Nasz Bank Gwiazda</DataSourceViewID>
+                                        <TableID>dbo_Transakcje</TableID>
+                                    </Source>
+                                    <StorageMode>Molap</StorageMode>
+                                    <ProcessingMode>Regular</ProcessingMode>
+                                    <ProactiveCaching>
+                                        <SilenceInterval>-PT1S</SilenceInterval>
+                                        <Latency>-PT1S</Latency>
+                                        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+                                        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+                                        <Source xsi:type="ProactiveCachingInheritedBinding" />
+                                    </ProactiveCaching>
+                                </Partition>
+                            </Partitions>
+                            <ProactiveCaching>
+                                <SilenceInterval>-PT1S</SilenceInterval>
+                                <Latency>-PT1S</Latency>
+                                <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+                                <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+                                <Source xsi:type="ProactiveCachingInheritedBinding" />
+                            </ProactiveCaching>
+                        </MeasureGroup>
+                    </MeasureGroups>
+                    <Source>
+                        <DataSourceViewID>Nasz Bank Gwiazda</DataSourceViewID>
+                    </Source>
+                    <ProactiveCaching>
+                        <SilenceInterval>-PT1S</SilenceInterval>
+                        <Latency>-PT1S</Latency>
+                        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+                        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+                        <Source xsi:type="ProactiveCachingInheritedBinding" />
+                    </ProactiveCaching>
+                </Cube>
+            </Cubes>
+            <DataSources>
+                <DataSource xsi:type="RelationalDataSource">
+                    <ID>Nasz Bank Gwiazda</ID>
+                    <Name>Nasz Bank Gwiazda</Name>
+                    <ConnectionString>Provider=SQLNCLI11.1;Data Source=db-mssql;Integrated Security=SSPI;Initial Catalog=NaszBankGwiazda</ConnectionString>
+                    <ImpersonationInfo>
+                        <ImpersonationMode>ImpersonateAccount</ImpersonationMode>
+                        <Account>pd3565</Account>
+                    </ImpersonationInfo>
+                    <Timeout>PT0S</Timeout>
+                </DataSource>
+            </DataSources>
+            <DataSourceViews>
+                <DataSourceView>
+                    <ID>Nasz Bank Gwiazda</ID>
+                    <Name>Nasz Bank Gwiazda</Name>
+                    <Annotations>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+                            <Value>true</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+                            <Value>_ALL_TABLES_</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+                            <Value>true</Value>
+                        </Annotation>
+                        <Annotation>
+                            <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+                            <Value>
+                                <Layouts xmlns="">
+                                    <Diagram>
+                                        <Name>_ALL_TABLES_</Name>
+                                        <DiagramLayout>
+                                            <dds>
+                                                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="10" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-15493" scrolltop="-7536" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="48578" y="32888" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                                                    <font>
+                                                        <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+                                                    </font>
+                                                    <mouseicon>
+                                                        <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                                                    </mouseicon>
+                                                </diagram>
+                                                <layoutmanager>
+                                                    <ddsxmlobj />
+                                                </layoutmanager>
+                                                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Czas" left="12069" top="6686" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5054" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                                    <control>
+                                                        <ddsxmlobjectstreaminitwrapper binary="000e0000be13000088130000" />
+                                                    </control>
+                                                    <layoutobject>
+                                                        <ddsxmlobj>
+                                                            <property name="LogicalObject" value="dbo_Czas" vartype="8" />
+                                                        </ddsxmlobj>
+                                                    </layoutobject>
+                                                    <shape groupshapeid="0" groupnode="0" />
+                                                </ddscontrol>
+                                                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Oddział Banku" left="6124" top="13372" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3545" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                                    <control>
+                                                        <ddsxmlobjectstreaminitwrapper binary="000e0000d90d00009b0f0000" />
+                                                    </control>
+                                                    <layoutobject>
+                                                        <ddsxmlobj>
+                                                            <property name="LogicalObject" value="dbo_OddzialBanku" vartype="8" />
+                                                        </ddsxmlobj>
+                                                    </layoutobject>
+                                                    <shape groupshapeid="0" groupnode="0" />
+                                                </ddscontrol>
+                                                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Rachunek" left="5145" top="0" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="4524" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                                    <control>
+                                                        <ddsxmlobjectstreaminitwrapper binary="000e0000ac11000088130000" />
+                                                    </control>
+                                                    <layoutobject>
+                                                        <ddsxmlobj>
+                                                            <property name="LogicalObject" value="dbo_Rachunek" vartype="8" />
+                                                        </ddsxmlobj>
+                                                    </layoutobject>
+                                                    <shape groupshapeid="0" groupnode="0" />
+                                                </ddscontrol>
+                                                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Rodzaj Operacji" left="20" top="7400" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3704" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                                    <control>
+                                                        <ddsxmlobjectstreaminitwrapper binary="000e0000780e0000f40d0000" />
+                                                    </control>
+                                                    <layoutobject>
+                                                        <ddsxmlobj>
+                                                            <property name="LogicalObject" value="dbo_RodzajOperacji" vartype="8" />
+                                                        </ddsxmlobj>
+                                                    </layoutobject>
+                                                    <shape groupshapeid="0" groupnode="0" />
+                                                </ddscontrol>
+                                                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Transakcje" left="6124" top="7400" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3545" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                                    <control>
+                                                        <ddsxmlobjectstreaminitwrapper binary="000e0000d90d0000f40d0000" />
+                                                    </control>
+                                                    <layoutobject>
+                                                        <ddsxmlobj>
+                                                            <property name="LogicalObject" value="dbo_Transakcje" vartype="8" />
+                                                        </ddsxmlobj>
+                                                    </layoutobject>
+                                                    <shape groupshapeid="0" groupnode="0" />
+                                                </ddscontrol>
+                                                <ddscontrol controlprogid="MSDDS.Polyline" left="7497" top="10672" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                                    <control>
+                                                        <ddsxmlobj>
+                                                            <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                                                        </ddsxmlobj>
+                                                    </control>
+                                                    <layoutobject>
+                                                        <ddsxmlobj>
+                                                            <property name="LogicalObject" value="dataSet.Relations[fk_oddzial]" vartype="8" />
+                                                            <property name="Virtual" value="0" vartype="11" />
+                                                            <property name="VisibleAP" value="0" vartype="3" />
+                                                        </ddsxmlobj>
+                                                    </layoutobject>
+                                                    <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="5" sourceattachpoint="6" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                                                        <point x="7896" y="13372" />
+                                                        <point x="7896" y="10972" />
+                                                    </connector>
+                                                </ddscontrol>
+                                                <ddscontrol controlprogid="MSDDS.Polyline" left="7008" top="4501" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="1188" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                                    <control>
+                                                        <ddsxmlobj>
+                                                            <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                                                        </ddsxmlobj>
+                                                    </control>
+                                                    <layoutobject>
+                                                        <ddsxmlobj>
+                                                            <property name="LogicalObject" value="dataSet.Relations[fk_konto]" vartype="8" />
+                                                            <property name="Virtual" value="0" vartype="11" />
+                                                            <property name="VisibleAP" value="0" vartype="3" />
+                                                        </ddsxmlobj>
+                                                    </layoutobject>
+                                                    <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="5" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                                                        <point x="7407" y="5000" />
+                                                        <point x="7407" y="6200" />
+                                                        <point x="7896" y="6200" />
+                                                        <point x="7896" y="7400" />
+                                                    </connector>
+                                                </ddscontrol>
+                                                <ddscontrol controlprogid="MSDDS.Polyline" left="9369" top="8787" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                                    <control>
+                                                        <ddsxmlobj>
+                                                            <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                                                        </ddsxmlobj>
+                                                    </control>
+                                                    <layoutobject>
+                                                        <ddsxmlobj>
+                                                            <property name="LogicalObject" value="dataSet.Relations[fk_czas]" vartype="8" />
+                                                            <property name="Virtual" value="0" vartype="11" />
+                                                            <property name="VisibleAP" value="0" vartype="3" />
+                                                        </ddsxmlobj>
+                                                    </layoutobject>
+                                                    <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="5" sourceattachpoint="26" destattachpoint="21" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                                                        <point x="12069" y="9186" />
+                                                        <point x="9669" y="9186" />
+                                                    </connector>
+                                                </ddscontrol>
+                                                <ddscontrol controlprogid="MSDDS.Polyline" left="3424" top="8787" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                                                    <control>
+                                                        <ddsxmlobj>
+                                                            <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                                                        </ddsxmlobj>
+                                                    </control>
+                                                    <layoutobject>
+                                                        <ddsxmlobj>
+                                                            <property name="LogicalObject" value="dataSet.Relations[fk_operacja]" vartype="8" />
+                                                            <property name="Virtual" value="0" vartype="11" />
+                                                            <property name="VisibleAP" value="0" vartype="3" />
+                                                        </ddsxmlobj>
+                                                    </layoutobject>
+                                                    <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="5" sourceattachpoint="21" destattachpoint="20" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                                                        <point x="3724" y="9186" />
+                                                        <point x="6124" y="9186" />
+                                                    </connector>
+                                                </ddscontrol>
+                                            </dds>
+                                        </DiagramLayout>
+                                        <ShowRelationshipNames>False</ShowRelationshipNames>
+                                        <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+                                        <DiagramViewPortLeft>-15493</DiagramViewPortLeft>
+                                        <DiagramViewPortTop>-7536</DiagramViewPortTop>
+                                        <DiagramBoundingLeft>0</DiagramBoundingLeft>
+                                        <DiagramBoundingTop>0</DiagramBoundingTop>
+                                        <DiagramZoom>100</DiagramZoom>
+                                    </Diagram>
+                                </Layouts>
+                            </Value>
+                        </Annotation>
+                    </Annotations>
+                    <DataSourceID>Nasz Bank Gwiazda</DataSourceID>
+                    <Schema>
+                        <xs:schema id="Nasz_x0020_Bank_x0020_Gwiazda" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+                            <xs:element name="Nasz_x0020_Bank_x0020_Gwiazda" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+                                <xs:complexType>
+                                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                        <xs:element name="dbo_Czas" msprop:DbTableName="Czas" msprop:FriendlyName="Czas" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="IdCzasu" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:DbColumnName="IdCzasu" msprop:FriendlyName="IdCzasu" type="xs:int" />
+                                                    <xs:element name="Data" msprop:DbColumnName="Data" msprop:FriendlyName="Data" type="xs:dateTime" />
+                                                    <xs:element name="Dzien" msprop:DbColumnName="Dzien" msprop:FriendlyName="Dzien" type="xs:decimal" />
+                                                    <xs:element name="Miesiac" msprop:DbColumnName="Miesiac" msprop:FriendlyName="Miesiac" type="xs:decimal" />
+                                                    <xs:element name="Kwartal" msprop:DbColumnName="Kwartal" msprop:FriendlyName="Kwartal" type="xs:decimal" />
+                                                    <xs:element name="Rok" msprop:DbColumnName="Rok" msprop:FriendlyName="Rok" type="xs:decimal" />
+                                                    <xs:element name="DzienTygodnia" msprop:DbColumnName="DzienTygodnia" msprop:FriendlyName="DzienTygodnia" type="xs:decimal" />
+                                                    <xs:element name="NazwaMiesiacaPolska" msprop:DbColumnName="NazwaMiesiacaPolska" msprop:FriendlyName="NazwaMiesiacaPolska">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="50" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="NazwaMiesiacaAngielska" msprop:DbColumnName="NazwaMiesiacaAngielska" msprop:FriendlyName="NazwaMiesiacaAngielska">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="50" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="NazwaDniaTygodniaPolska" msprop:DbColumnName="NazwaDniaTygodniaPolska" msprop:FriendlyName="NazwaDniaTygodniaPolska">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="50" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="NazwaDniaTygodniaAngielska" msprop:DbColumnName="NazwaDniaTygodniaAngielska" msprop:FriendlyName="NazwaDniaTygodniaAngielska">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="50" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="dbo_OddzialBanku" msprop:DbTableName="OddzialBanku" msprop:FriendlyName="Oddział Banku" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="IdOddzialuBanku" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:DbColumnName="IdOddzialuBanku" msprop:FriendlyName="IdOddzialuBanku" type="xs:int" />
+                                                    <xs:element name="IdOddzialuBankuT" msprop:DbColumnName="IdOddzialuBankuT" msprop:FriendlyName="IdOddzialuBankuT" type="xs:int" />
+                                                    <xs:element name="NazwaOddzialu" msprop:DbColumnName="NazwaOddzialu" msprop:FriendlyName="NazwaOddzialu">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="255" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="IdMiastaT" msprop:DbColumnName="IdMiastaT" msprop:FriendlyName="IdMiastaT" type="xs:int" />
+                                                    <xs:element name="Dzielnica" msprop:DbColumnName="Dzielnica" msprop:FriendlyName="Dzielnica">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="100" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="Miasto" msprop:DbColumnName="Miasto" msprop:FriendlyName="Miasto">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="255" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="Wojewodztwo" msprop:DbColumnName="Wojewodztwo" msprop:FriendlyName="Wojewodztwo">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="255" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="dbo_Rachunek" msprop:DbTableName="Rachunek" msprop:FriendlyName="Rachunek" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="IdRachunku" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:DbColumnName="IdRachunku" msprop:FriendlyName="IdRachunku" type="xs:int" />
+                                                    <xs:element name="IdRachunkuT" msprop:DbColumnName="IdRachunkuT" msprop:FriendlyName="IdRachunkuT" type="xs:int" />
+                                                    <xs:element name="NumerRachunku" msprop:DbColumnName="NumerRachunku" msprop:FriendlyName="NumerRachunku">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="26" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="DataZalozenia" msprop:DbColumnName="DataZalozenia" msprop:FriendlyName="DataZalozenia" type="xs:dateTime" />
+                                                    <xs:element name="IdWlascicielaT" msprop:DbColumnName="IdWlascicielaT" msprop:FriendlyName="IdWlascicielaT" type="xs:int" />
+                                                    <xs:element name="ImieWlasciciela" msprop:DbColumnName="ImieWlasciciela" msprop:FriendlyName="ImieWlasciciela">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="50" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="NazwiskoWlasciciela" msprop:DbColumnName="NazwiskoWlasciciela" msprop:FriendlyName="NazwiskoWlasciciela">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="50" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="DataUrodzeniaWlasciciela" msprop:DbColumnName="DataUrodzeniaWlasciciela" msprop:FriendlyName="DataUrodzeniaWlasciciela" type="xs:dateTime" />
+                                                    <xs:element name="PlecWlasciciela" msprop:DbColumnName="PlecWlasciciela" msprop:FriendlyName="PlecWlasciciela">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="1" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="IdMiastaWlascicielaT" msprop:DbColumnName="IdMiastaWlascicielaT" msprop:FriendlyName="IdMiastaWlascicielaT" type="xs:int" />
+                                                    <xs:element name="DzielnicaWlasciciela" msprop:DbColumnName="DzielnicaWlasciciela" msprop:FriendlyName="DzielnicaWlasciciela">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="100" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="MiastoWlasciciela" msprop:DbColumnName="MiastoWlasciciela" msprop:FriendlyName="MiastoWlasciciela">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="255" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="WojewodztwoWlasciciela" msprop:DbColumnName="WojewodztwoWlasciciela" msprop:FriendlyName="WojewodztwoWlasciciela">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="255" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="GrupaAktywnosci" msprop:DbColumnName="GrupaAktywnosci" msprop:FriendlyName="GrupaAktywnosci" minOccurs="0">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="50" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="dbo_RodzajOperacji" msprop:DbTableName="RodzajOperacji" msprop:FriendlyName="Rodzaj Operacji" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="IdRodzajuOperacji" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:DbColumnName="IdRodzajuOperacji" msprop:FriendlyName="IdRodzajuOperacji" type="xs:int" />
+                                                    <xs:element name="IdRodzajuOperacjiT" msprop:DbColumnName="IdRodzajuOperacjiT" msprop:FriendlyName="IdRodzajuOperacjiT" type="xs:int" />
+                                                    <xs:element name="Rodzaj" msprop:DbColumnName="Rodzaj" msprop:FriendlyName="Rodzaj">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="150" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="RodzajAngielski" msprop:DbColumnName="RodzajAngielski" msprop:FriendlyName="RodzajAngielski">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="150" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="Typ" msprop:DbColumnName="Typ" msprop:FriendlyName="Typ">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="50" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="TypAngielski" msprop:DbColumnName="TypAngielski" msprop:FriendlyName="TypAngielski">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="50" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="dbo_Transakcje" msprop:DbTableName="Transakcje" msprop:FriendlyName="Transakcje" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="IdRachunku" msprop:DbColumnName="IdRachunku" msprop:FriendlyName="IdRachunku" type="xs:int" />
+                                                    <xs:element name="IdOddzialuBanku" msprop:DbColumnName="IdOddzialuBanku" msprop:FriendlyName="IdOddzialuBanku" type="xs:int" />
+                                                    <xs:element name="IdCzasu" msprop:DbColumnName="IdCzasu" msprop:FriendlyName="IdCzasu" type="xs:int" />
+                                                    <xs:element name="IdRodzajuOperacji" msprop:DbColumnName="IdRodzajuOperacji" msprop:FriendlyName="IdRodzajuOperacji" type="xs:int" />
+                                                    <xs:element name="SumarycznaKwota" msprop:DbColumnName="SumarycznaKwota" msprop:FriendlyName="SumarycznaKwota" type="xs:decimal" />
+                                                    <xs:element name="LiczbaOperacji" msprop:DbColumnName="LiczbaOperacji" msprop:FriendlyName="LiczbaOperacji" type="xs:decimal" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:choice>
+                                </xs:complexType>
+                                <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+                                    <xs:selector xpath=".//dbo_Czas" />
+                                    <xs:field xpath="IdCzasu" />
+                                </xs:unique>
+                                <xs:unique name="dbo_OddzialBanku_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+                                    <xs:selector xpath=".//dbo_OddzialBanku" />
+                                    <xs:field xpath="IdOddzialuBanku" />
+                                </xs:unique>
+                                <xs:unique name="dbo_Rachunek_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+                                    <xs:selector xpath=".//dbo_Rachunek" />
+                                    <xs:field xpath="IdRachunku" />
+                                </xs:unique>
+                                <xs:unique name="dbo_RodzajOperacji_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+                                    <xs:selector xpath=".//dbo_RodzajOperacji" />
+                                    <xs:field xpath="IdRodzajuOperacji" />
+                                </xs:unique>
+                                <xs:unique name="dbo_Transakcje_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+                                    <xs:selector xpath=".//dbo_Transakcje" />
+                                    <xs:field xpath="IdRachunku" />
+                                    <xs:field xpath="IdCzasu" />
+                                    <xs:field xpath="IdRodzajuOperacji" />
+                                </xs:unique>
+                                <xs:keyref name="fk_operacja" refer="dbo_RodzajOperacji_Constraint1">
+                                    <xs:selector xpath=".//dbo_Transakcje" />
+                                    <xs:field xpath="IdRodzajuOperacji" />
+                                </xs:keyref>
+                                <xs:keyref name="fk_czas" refer="Constraint1">
+                                    <xs:selector xpath=".//dbo_Transakcje" />
+                                    <xs:field xpath="IdCzasu" />
+                                </xs:keyref>
+                                <xs:keyref name="fk_konto" refer="dbo_Rachunek_Constraint1">
+                                    <xs:selector xpath=".//dbo_Transakcje" />
+                                    <xs:field xpath="IdRachunku" />
+                                </xs:keyref>
+                                <xs:keyref name="fk_oddzial" refer="dbo_OddzialBanku_Constraint1">
+                                    <xs:selector xpath=".//dbo_Transakcje" />
+                                    <xs:field xpath="IdOddzialuBanku" />
+                                </xs:keyref>
+                            </xs:element>
+                        </xs:schema>
+                        <Nasz_x0020_Bank_x0020_Gwiazda xmlns="" />
+                    </Schema>
+                </DataSourceView>
+            </DataSourceViews>
+            <Roles>
+                <Role>
+                    <ID>Role</ID>
+                    <Name>Role</Name>
+                    <Members>
+                        <Member>
+                            <Name>PJWSTK\pd3565</Name>
+                            <Sid>S-1-5-21-1220945662-362288127-1606980848-101979</Sid>
+                        </Member>
+                    </Members>
+                </Role>
+            </Roles>
+            <DatabasePermissions>
+                <DatabasePermission>
+                    <ID>DatabasePermission</ID>
+                    <Name>DatabasePermission</Name>
+                    <RoleID>Role</RoleID>
+                    <Process>true</Process>
+                    <ReadDefinition>Allowed</ReadDefinition>
+                    <Read>Allowed</Read>
+                    <Administer>true</Administer>
+                </DatabasePermission>
+            </DatabasePermissions>
+        </Database>
+    </ObjectDefinition>
+</Create>

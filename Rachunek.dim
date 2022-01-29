@@ -1,0 +1,387 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1270058c-36e0-4d81-bb1e-b8c5bd2fe2da" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Rachunek</ID>
+  <Name>Rachunek</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6264" scrolltop="-13282" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="15928" y="31565" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Rachunek" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4524" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ac11000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Rachunek" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-6264</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-13282</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="25632772-ae86-4d68-8053-9daa03300c37">
+    <DataSourceViewID>Nasz Bank Gwiazda</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="eaf61177-04e8-4c53-8de0-bdfac919f07e">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="b4d744e9-15a0-4a28-a786-d0b295c3ead3">
+      <ID>Id Rachunku</ID>
+      <Name>Numer rachunku</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c84aa16d-8ae9-4e57-a625-9afed776cfe9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c645ecfb-9eaf-4aad-9e53-c2e88dc20b87">
+            <TableID>dbo_Rachunek</TableID>
+            <ColumnID>IdRachunku</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="bc93e935-ad72-4763-b317-9434a0917783">
+        <DataType>WChar</DataType>
+        <DataSize>26</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cbb384a8-2e9a-4dde-840d-42ad5c874adf">
+          <TableID>dbo_Rachunek</TableID>
+          <ColumnID>NumerRachunku</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b1f7cdfc-2c5e-401b-9be6-da2ade9c0945">
+          <AttributeID>Id Rachunku T</AttributeID>
+          <Name>Id Rachunku T</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9b49e670-42a7-4042-bf71-71854a375ac8">
+          <AttributeID>Data Zalozenia</AttributeID>
+          <Name>Data Założenia Rachunku</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="40b3fced-427c-4ddf-93bd-11730b0ee1c5">
+          <AttributeID>Id Wlasciciela T</AttributeID>
+          <Name>Id Wlasciciela T</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d4c67f2c-ac90-4e8b-8df4-629264270f3c">
+          <AttributeID>Imie Wlasciciela</AttributeID>
+          <Name>Imie Właściciela</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4ce17ba9-6999-4018-8e9c-1c037cfc548a">
+          <AttributeID>Nazwisko Wlasciciela</AttributeID>
+          <Name>Nazwisko Wlasciciela</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="79b879a9-d905-41e7-8d9f-270de4a78b41">
+          <AttributeID>Data Urodzenia Wlasciciela</AttributeID>
+          <Name>Data Urodzenia Własciciela</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ccec87b6-a0d4-4eb7-8f23-224eeeedd153">
+          <AttributeID>Plec Wlasciciela</AttributeID>
+          <Name>Płeć Właściciela</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6ab44a29-8b9d-470f-98de-deabd134008b">
+          <AttributeID>Id Miasta Wlasciciela T</AttributeID>
+          <Name>Identyfikator miasta właściciela</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9706d60a-da9b-4453-b122-3b4adc7cfcc2">
+          <AttributeID>Dzielnica Wlasciciela</AttributeID>
+          <Name>Dzielnica Własciciela</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f31f205c-1345-42d8-9112-0507daf272eb">
+          <AttributeID>Miasto Wlasciciela</AttributeID>
+          <Name>Miasto Właściciela</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="27a2c891-01c6-4c9a-856c-daef5a641fde">
+          <AttributeID>Wojewodztwo Wlasciciela</AttributeID>
+          <Name>Województwo Właściciela</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="06de9a4f-7b48-4837-a64b-555aa4c561ec">
+          <AttributeID>Grupa Aktywnosci</AttributeID>
+          <Name>Grupa Aktywności</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="75773c12-711a-4fe2-8009-9fed598c5867">
+      <ID>Id Rachunku T</ID>
+      <Name>Id Rachunku T</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="53940671-8a1c-4a79-ac48-5ce1090931c6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4097a3fd-af34-4de9-bf15-b1541351828f">
+            <TableID>dbo_Rachunek</TableID>
+            <ColumnID>IdRachunkuT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6bb62519-2bb1-4f68-a7d6-26675fb48498">
+      <ID>Data Zalozenia</ID>
+      <Name>Data Założenia Rachunku</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="18891ccc-83c1-42e0-ad95-1cfd8f490b97">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="070da197-e76c-418b-bf2c-0326ee4ea2c8">
+            <TableID>dbo_Rachunek</TableID>
+            <ColumnID>DataZalozenia</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="abda1fef-eade-42dd-a8e0-a60f6601b99a">
+      <ID>Id Wlasciciela T</ID>
+      <Name>Id Wlasciciela T</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e63eae62-a65a-46e9-9901-912dffdcf667">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="06a3a4d5-0d9b-4b26-9ba3-0ee0b816918a">
+            <TableID>dbo_Rachunek</TableID>
+            <ColumnID>IdWlascicielaT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2d7cabbc-61bf-4fd3-bdc3-1bd0a9b9915a">
+      <ID>Imie Wlasciciela</ID>
+      <Name>Imie Właściciela</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a00c20f9-964f-47a4-b189-a82420cbef11">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9c0f99b6-c264-4453-a2f4-b986f3fd1e82">
+            <TableID>dbo_Rachunek</TableID>
+            <ColumnID>ImieWlasciciela</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="43df156e-a35f-49d4-a2f8-4f1226baf3ea">
+      <ID>Nazwisko Wlasciciela</ID>
+      <Name>Nazwisko Wlasciciela</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="71091e23-3b2a-4fcd-9067-dbb649b50e56">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f12d46f-7356-444d-8b2f-c1bb200c8a2c">
+            <TableID>dbo_Rachunek</TableID>
+            <ColumnID>NazwiskoWlasciciela</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="05ce3ec7-9514-41ca-a948-8da57d8f04c2">
+      <ID>Data Urodzenia Wlasciciela</ID>
+      <Name>Data Urodzenia Własciciela</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a027798f-bc89-460a-b27b-9db03927d396">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6b4e7a5e-1bf0-419a-ae28-191000921fb8">
+            <TableID>dbo_Rachunek</TableID>
+            <ColumnID>DataUrodzeniaWlasciciela</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1a5d3cf0-c751-448c-b587-37a7f4bceff6">
+      <ID>Plec Wlasciciela</ID>
+      <Name>Płeć Właściciela</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="89564397-5e01-4166-9a4d-50943bde4bfa">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="692e7f00-5e42-48cb-a276-99bac5402623">
+            <TableID>dbo_Rachunek</TableID>
+            <ColumnID>PlecWlasciciela</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a6d884d0-ccf9-45b0-9977-ad2c28ca6e1e">
+      <ID>Id Miasta Wlasciciela T</ID>
+      <Name>Identyfikator miasta właściciela</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8f3d9242-3908-4576-bb4f-f9d0d5173732">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="92fc1ac9-944c-4292-b494-11010519aec5">
+            <TableID>dbo_Rachunek</TableID>
+            <ColumnID>IdMiastaWlascicielaT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="363e680a-69c4-4e8c-a074-ab09d4cfbd72">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0721fa7b-09d2-455e-a7ee-fc1259b25f40">
+          <TableID>dbo_Rachunek</TableID>
+          <ColumnID>MiastoWlasciciela</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5a819413-e098-444b-bcd6-ae976ce97fdb">
+      <ID>Dzielnica Wlasciciela</ID>
+      <Name>Dzielnica Własciciela</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6ac50ab0-6b2e-4aef-b2dc-5b5a3a912079">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b488ee00-32a5-4f11-a4fc-4a2914041bc7">
+            <TableID>dbo_Rachunek</TableID>
+            <ColumnID>DzielnicaWlasciciela</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ee5e0bfd-71cd-4c79-ad4b-693b74f88f60">
+      <ID>Miasto Wlasciciela</ID>
+      <Name>Miasto Właściciela</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b1f695e5-9279-47dc-bc7c-e75bfd6f6789">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a2f4d950-e674-4ecc-9506-8b906f0e01fd">
+            <TableID>dbo_Rachunek</TableID>
+            <ColumnID>MiastoWlasciciela</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9002bd50-1e37-4fe9-b3c5-cfd1db221710">
+      <ID>Wojewodztwo Wlasciciela</ID>
+      <Name>Województwo Właściciela</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="02dd604f-8327-49aa-a595-d75600c93ad4">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2d786290-58b4-4633-b053-1ebda6e3c899">
+            <TableID>dbo_Rachunek</TableID>
+            <ColumnID>WojewodztwoWlasciciela</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d07a787d-c226-4e89-906e-0b545df1861e">
+      <ID>Grupa Aktywnosci</ID>
+      <Name>Grupa Aktywności</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3f87902e-0b44-431c-a566-999c04f7cfd0">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bb40533f-2e5a-4543-99d2-6db5d5a24117">
+            <TableID>dbo_Rachunek</TableID>
+            <ColumnID>GrupaAktywnosci</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="a0793472-5307-4dc0-9907-0f1993da2ba4">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchia Geograficzna</Name>
+      <Levels>
+        <Level dwd:design-time-name="0996df79-6710-4237-95fa-1bed45b2dd13">
+          <ID>Województwo Właściciela</ID>
+          <Name>Województwo Właściciela</Name>
+          <SourceAttributeID>Wojewodztwo Wlasciciela</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="855816a3-392b-4144-a637-28cfbb6b3ee3">
+          <ID>Identyfikator miasta właściciela</ID>
+          <Name>Identyfikator miasta właściciela</Name>
+          <SourceAttributeID>Id Miasta Wlasciciela T</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="e6e2ff98-c292-4bc2-9029-5152658dc6ac">
+          <ID>Numer rachunku</ID>
+          <Name>Numer rachunku</Name>
+          <SourceAttributeID>Id Rachunku</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

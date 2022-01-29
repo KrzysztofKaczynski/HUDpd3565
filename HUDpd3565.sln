@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "HUDpd3565", "HUDpd3565.dwproj", "{D31E06DA-D51D-4CB6-B437-D539FB4165ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D31E06DA-D51D-4CB6-B437-D539FB4165ED}.Development|Default.ActiveCfg = Development
+		{D31E06DA-D51D-4CB6-B437-D539FB4165ED}.Development|Default.Build.0 = Development
+		{D31E06DA-D51D-4CB6-B437-D539FB4165ED}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B4A0ED4-EF8C-499D-9E29-7414BA46E7A2}
+	EndGlobalSection
+EndGlobal

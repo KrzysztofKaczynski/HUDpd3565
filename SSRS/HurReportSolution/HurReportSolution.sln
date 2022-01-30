@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "HurReportSolution", "HurReportSolution.rptproj", "{C9C35F98-606B-4EE0-A626-CB0965D02029}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9C35F98-606B-4EE0-A626-CB0965D02029}.Debug|Default.ActiveCfg = Debug
+		{C9C35F98-606B-4EE0-A626-CB0965D02029}.Debug|Default.Build.0 = Debug
+		{C9C35F98-606B-4EE0-A626-CB0965D02029}.Debug|Default.Deploy.0 = Debug
+		{C9C35F98-606B-4EE0-A626-CB0965D02029}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{C9C35F98-606B-4EE0-A626-CB0965D02029}.DebugLocal|Default.Build.0 = DebugLocal
+		{C9C35F98-606B-4EE0-A626-CB0965D02029}.Release|Default.ActiveCfg = Release
+		{C9C35F98-606B-4EE0-A626-CB0965D02029}.Release|Default.Build.0 = Release
+		{C9C35F98-606B-4EE0-A626-CB0965D02029}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E59DFC9-D66B-427D-ABDA-A016D70D51FF}
+	EndGlobalSection
+EndGlobal

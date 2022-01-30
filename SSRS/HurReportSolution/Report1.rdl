@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="NaszBank">
+      <ConnectionProperties>
+        <DataProvider>OLEDB-MD</DataProvider>
+        <ConnectString>Data Source=db-mssql;Initial Catalog=pd3565</ConnectString>
+        <IntegratedSecurity>true</IntegratedSecurity>
+      </ConnectionProperties>
+      <rd:SecurityType>Integrated</rd:SecurityType>
+      <rd:DataSourceID>dded2ba8-660b-43cc-817f-0e022f303c2e</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dsReport1">
+      <Query>
+        <DataSourceName>NaszBank</DataSourceName>
+        <CommandText> SELECT NON EMPTY { [Measures].[Sumaryczna kwota] } ON COLUMNS, NON EMPTY { ([Rodzaj Operacji].[Hierarchia Typ Rodzaj].[Id Rodzaju Operacji].ALLMEMBERS * [Rachunek].[Wiek Właściciela].[Wiek Właściciela].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Nasz Bank Gwiazda] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+        <rd:DesignerState>
+          <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>MDX</CommandType>
+            <QuerySpecification xsi:type="MDXQuerySpecification">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Rodzaj Operacji</DimensionName>
+                      <HierarchyName>Hierarchia Typ Rodzaj</HierarchyName>
+                      <HierarchyUniqueName>[Rodzaj Operacji].[Hierarchia Typ Rodzaj]</HierarchyUniqueName>
+                      <LevelName>Typ</LevelName>
+                      <UniqueName>[Rodzaj Operacji].[Hierarchia Typ Rodzaj].[Typ]</UniqueName>
+                    </ID>
+                    <ItemCaption>Typ</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Rodzaj Operacji</DimensionName>
+                      <HierarchyName>Hierarchia Typ Rodzaj</HierarchyName>
+                      <HierarchyUniqueName>[Rodzaj Operacji].[Hierarchia Typ Rodzaj]</HierarchyUniqueName>
+                      <LevelName>Id Rodzaju Operacji</LevelName>
+                      <UniqueName>[Rodzaj Operacji].[Hierarchia Typ Rodzaj].[Id Rodzaju Operacji]</UniqueName>
+                    </ID>
+                    <ItemCaption>Id Rodzaju Operacji</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Rachunek</DimensionName>
+                      <HierarchyName>Wiek Właściciela</HierarchyName>
+                      <HierarchyUniqueName>[Rachunek].[Wiek Właściciela]</HierarchyUniqueName>
+                      <LevelName>Wiek Właściciela</LevelName>
+                      <UniqueName>[Rachunek].[Wiek Właściciela].[Wiek Właściciela]</UniqueName>
+                    </ID>
+                    <ItemCaption>Wiek Właściciela</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                    <DisplayFolder>Dane właściela</DisplayFolder>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Sumaryczna kwota</MeasureName>
+                      <UniqueName>[Measures].[Sumaryczna kwota]</UniqueName>
+                    </ID>
+                    <ItemCaption>Sumaryczna kwota</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                </Items>
+              </Select>
+              <AutoExecute>false</AutoExecute>
+              <From>Nasz Bank Gwiazda</From>
+              <Filter>
+                <FilterItems />
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties>
+                <IncludeMemberValue>true</IncludeMemberValue>
+              </QueryProperties>
+            </QuerySpecification>
+            <Query>
+              <Statement> SELECT NON EMPTY { [Measures].[Sumaryczna kwota] } ON COLUMNS, NON EMPTY { ([Rodzaj Operacji].[Hierarchia Typ Rodzaj].[Id Rodzaju Operacji].ALLMEMBERS * [Rachunek].[Wiek Właściciela].[Wiek Właściciela].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Nasz Bank Gwiazda] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+              <ParameterDefinitions />
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+      </Query>
+      <Fields>
+        <Field Name="Typ">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Rodzaj Operacji].[Hierarchia Typ Rodzaj].[Typ]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Id_Rodzaju_Operacji">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Rodzaj Operacji].[Hierarchia Typ Rodzaj].[Id Rodzaju Operacji]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Wiek_Właściciela">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Rachunek].[Wiek Właściciela].[Wiek Właściciela]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Sumaryczna_kwota">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Sumaryczna kwota]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>2cm</LeftMargin>
+        <RightMargin>2cm</RightMargin>
+        <TopMargin>2cm</TopMargin>
+        <BottomMargin>2cm</BottomMargin>
+        <ColumnSpacing>0.13cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>28f0d0c9-74c8-46ab-a24a-91aac903130d</rd:ReportID>
+</Report>

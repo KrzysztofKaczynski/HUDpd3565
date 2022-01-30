@@ -50,6 +50,7 @@
   </PropertyGroup>
   <ItemGroup>
     <DataSource Include="dsBankAS.rds" />
+    <DataSource Include="dsBankDW.rds" />
   </ItemGroup>
   <ItemGroup>
     <Report Include="Report1.rdl" />

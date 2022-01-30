@@ -8,6 +8,11 @@
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>3b373f74-9f98-4e5b-95bb-3d17f2bac9d6</rd:DataSourceID>
     </DataSource>
+    <DataSource Name="dsBankDW">
+      <DataSourceReference>dsBankDW</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>70cc266c-8a95-4301-919f-bff1e5cdeeac</rd:DataSourceID>
+    </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
@@ -162,12 +167,26 @@
       <Filters>
         <Filter>
           <FilterExpression>=Fields!Rok.Value</FilterExpression>
-          <Operator>Equal</Operator>
+          <Operator>In</Operator>
           <FilterValues>
             <FilterValue>=Parameters!pRok.Value</FilterValue>
           </FilterValues>
         </Filter>
       </Filters>
+    </DataSet>
+    <DataSet Name="dsRoczniki">
+      <Query>
+        <DataSourceName>dsBankDW</DataSourceName>
+        <CommandText>SELECT DISTINCT Rok
+FROM            Czas
+ORDER BY Rok</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Rok">
+          <DataField>Rok</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
     </DataSet>
   </DataSets>
   <ReportSections>
@@ -642,7 +661,21 @@
   <ReportParameters>
     <ReportParameter Name="pRok">
       <DataType>String</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsRoczniki</DataSetName>
+          <ValueField>Rok</ValueField>
+        </DataSetReference>
+      </DefaultValue>
       <Prompt>Rok transakcji</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsRoczniki</DataSetName>
+          <ValueField>Rok</ValueField>
+          <LabelField>Rok</LabelField>
+        </DataSetReference>
+      </ValidValues>
+      <MultiValue>true</MultiValue>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>

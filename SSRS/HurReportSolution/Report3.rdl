@@ -188,6 +188,19 @@ ORDER BY Rok</CommandText>
         </Field>
       </Fields>
     </DataSet>
+    <DataSet Name="dsTyp">
+      <Query>
+        <DataSourceName>dsBankDW</DataSourceName>
+        <CommandText>SELECT DISTINCT Typ 
+FROM RodzajOperacji</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Typ">
+          <DataField>Typ</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
   </DataSets>
   <ReportSections>
     <ReportSection>
@@ -677,6 +690,23 @@ ORDER BY Rok</CommandText>
       </ValidValues>
       <MultiValue>true</MultiValue>
     </ReportParameter>
+    <ReportParameter Name="pTyp">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsTyp</DataSetName>
+          <ValueField>Typ</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Typ operacji</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsTyp</DataSetName>
+          <ValueField>Typ</ValueField>
+        </DataSetReference>
+      </ValidValues>
+      <MultiValue>true</MultiValue>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -687,6 +717,11 @@ ORDER BY Rok</CommandText>
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>pRok</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>pTyp</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

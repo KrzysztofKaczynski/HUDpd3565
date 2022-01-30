@@ -172,6 +172,20 @@
             <FilterValue>=Parameters!pRok.Value</FilterValue>
           </FilterValues>
         </Filter>
+        <Filter>
+          <FilterExpression>=Fields!Typ.Value</FilterExpression>
+          <Operator>In</Operator>
+          <FilterValues>
+            <FilterValue>=Parameters!pTyp.Value</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
+          <FilterExpression>=Fields!Id_Rodzaju_Operacji.Value</FilterExpression>
+          <Operator>In</Operator>
+          <FilterValues>
+            <FilterValue>=Parameters!pRodzaj.Value</FilterValue>
+          </FilterValues>
+        </Filter>
       </Filters>
     </DataSet>
     <DataSet Name="dsRoczniki">
@@ -197,6 +211,23 @@ FROM RodzajOperacji</CommandText>
       <Fields>
         <Field Name="Typ">
           <DataField>Typ</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsRodzaj">
+      <Query>
+        <DataSourceName>dsBankDW</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@pTyp">
+            <Value>=Parameters!pTyp.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT DISTINCT Rodzaj FROM RodzajOperacji WHERE Typ in (@pTyp)</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Rodzaj">
+          <DataField>Rodzaj</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -707,6 +738,24 @@ FROM RodzajOperacji</CommandText>
       </ValidValues>
       <MultiValue>true</MultiValue>
     </ReportParameter>
+    <ReportParameter Name="pRodzaj">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsRodzaj</DataSetName>
+          <ValueField>Rodzaj</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Rodzaj operacji</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsRodzaj</DataSetName>
+          <ValueField>Rodzaj</ValueField>
+          <LabelField>Rodzaj</LabelField>
+        </DataSetReference>
+      </ValidValues>
+      <MultiValue>true</MultiValue>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -722,6 +771,11 @@ FROM RodzajOperacji</CommandText>
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>pTyp</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>pRodzaj</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
